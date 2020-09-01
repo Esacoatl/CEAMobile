@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Demo.unity
-    guid: 0b9bcd368c264eb45b81240cdbcd07db
+    path: Assets/Scenes/MainUI/MainMenu.unity
+    guid: cf484da951730364ea67c2c32dd08a6d
+  - enabled: 1
+    path: Assets/Scenes/ArroyoShooter/1_ArroyoShoot.unity
+    guid: 1ee4d41bc2de5c84ea1c796d7a167530
   m_configObjects: {}
