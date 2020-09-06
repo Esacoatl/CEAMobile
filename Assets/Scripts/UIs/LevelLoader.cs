@@ -9,6 +9,7 @@ public class LevelLoader : MonoBehaviour
     public GameObject loadingScreen;
     public Slider slider;
     public Text progressText;
+    public float transitionTime = 1f;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
