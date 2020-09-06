@@ -44,7 +44,7 @@ public class PauseScript : MonoBehaviour
     public void ExitAction()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadSceneAsync("LevelLoader");
+        SceneManager.LoadSceneAsync("Loader_1");
     }
 
 }
