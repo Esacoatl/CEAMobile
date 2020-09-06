@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14231041, g: 0.735849, b: 0.6910537, a: 1}
+  m_Color: {r: 0.011764706, g: 0.27058825, b: 0.4627451, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -353,15 +353,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.101326115, g: 0.9339623, b: 0.8704886, a: 0.78431374}
+  m_Color: {r: 0.4862745, g: 1, b: 0.94509804, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 578a33ba8868a2a4ab4b12e62e40c5f9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -411,6 +411,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 520113989}
   slider: {fileID: 696753564}
   progressText: {fileID: 336232106}
+  transitionTime: 1
 --- !u!4 &508463054
 Transform:
   m_ObjectHideFlags: 0
@@ -475,7 +476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 34.100006}
+  m_AnchoredPosition: {x: 0, y: 61}
   m_SizeDelta: {x: -436.3617, y: -177.27197}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517553548
@@ -498,7 +499,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d99b892b3f4c86849bfa4d9cc6efe4dc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 924091a1cb30cb44695c95dd91fc7a3d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -574,8 +575,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fdcfbfe9ae90a634f8fb4e1902b05c3d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 830f28d278e631d4682c1b83ab8940a4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -707,7 +708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888, y: -198.8}
+  m_AnchoredPosition: {x: 0.000022888, y: -163}
   m_SizeDelta: {x: 870.9437, y: 59.559677}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696753564
