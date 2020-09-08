@@ -10,11 +10,14 @@ public class shooterGameplay : MonoBehaviour
     public float timeEnemySpawn;
     public int waterLife;
     public int enemySpawnCount;
+    public int enemyDeadCorpseCount;
     float tempEnemyTime;
     public bool gameover = false;
+    public bool winLevel = false;
     public bool spawnEnd = false;
 
     public GameObject gameoverScreen;
+    public GameObject winScreen;
     public GameObject[] objectsLife = new GameObject[4];
     public GameObject[] objectsEnemys = new GameObject[3];
 
@@ -22,9 +25,10 @@ public class shooterGameplay : MonoBehaviour
     void Start()
     {
         waterLife = 3;
-        timeEnemySpawn = 10f;
+        timeEnemySpawn = 7f;
         tempEnemyTime = timeEnemySpawn;
         enemySpawnCount = objectsEnemys.Length;
+        enemyDeadCorpseCount = objectsEnemys.Length;
         enemySpawnCount = enemySpawnCount - 1;
     }
 
@@ -48,7 +52,7 @@ public class shooterGameplay : MonoBehaviour
 
     }
 
-    public void BichoAlAgua()
+    public void BichoToWater()
     {
         objectsLife[waterLife].SetActive(false);
         waterLife--;
@@ -60,9 +64,40 @@ public class shooterGameplay : MonoBehaviour
         }
     }
 
-    public void GameOverLoad()
+    public void BichoDead()
+    {
+        enemyDeadCorpseCount--;
+        if (enemyDeadCorpseCount <= 0)
+        {
+            winLevel = true;
+            winScreen.SetActive(true);
+        }
+    }
+
+    // win
+
+    public void WinLoad()
     {
         StartCoroutine(WaitCoroutine());
+    }
+
+    public void WinLoadSceneMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    IEnumerator WaitCoroutine()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(3);
+        WinLoadSceneMain();
+    }
+
+    // gameover
+
+    public void GameOverLoad()
+    {
+        StartCoroutine(WaitCoroutineGameover());
     }
 
     public void GameOverLoadSceneMain()
@@ -70,7 +105,7 @@ public class shooterGameplay : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    IEnumerator WaitCoroutine()
+    IEnumerator WaitCoroutineGameover()
     {
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(3);

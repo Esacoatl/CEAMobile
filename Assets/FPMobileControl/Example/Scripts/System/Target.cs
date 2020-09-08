@@ -11,6 +11,8 @@ namespace Lovatto.MobileInput
         public float health = 5.0f;
         public int pointValue;
 
+        public shooterGameplay shooterGameplay;
+
         public ParticleSystem DestroyedEffect;
 
         [Header("Audio")]
@@ -69,6 +71,8 @@ namespace Lovatto.MobileInput
             m_Destroyed = true;
 
             gameObject.SetActive(false);
+
+            shooterGameplay.BichoDead();
         }
     }
 }

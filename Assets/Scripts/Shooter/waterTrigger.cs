@@ -11,7 +11,7 @@ public class waterTrigger : MonoBehaviour
         if (obj.tag.Equals("Enemy"))
         {
             //Acciones a realizar cuando se detecta una entrada al Trigger.
-            shooterGameplay.BichoAlAgua();
+            shooterGameplay.BichoToWater();
         }
     }
 }
