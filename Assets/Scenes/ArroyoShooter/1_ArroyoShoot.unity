@@ -6261,9 +6261,41 @@ PrefabInstance:
       value: -96
       objectReference: {fileID: 0}
     - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1258081087}
+    - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1003724672}
+    - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
 --- !u!1 &1782824342316355541
