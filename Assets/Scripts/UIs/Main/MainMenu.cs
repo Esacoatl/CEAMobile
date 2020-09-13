@@ -24,4 +24,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("1_Buscador");
     }
+
+    public void PlayBuscador_1Loader()
+    {
+        SceneManager.LoadScene("Loader_Buscador");
+    }
 }

@@ -73,6 +73,8 @@ namespace Lovatto.MobileInput
             gameObject.SetActive(false);
 
             shooterGameplay.BichoDead();
+
+
         }
     }
 }

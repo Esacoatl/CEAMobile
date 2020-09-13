@@ -21,9 +21,5 @@ MonoBehaviour:
       id: 2
   episodes:
   - title: Episode
-    sceneAssets:
-    - {fileID: 102900000, guid: a7f90394e806bb049995d853e82116de, type: 3}
-    - {fileID: 102900000, guid: cf8af1738c3cb4b488b72c399f7898f8, type: 3}
-    scenes:
-    - Assets/Creator Kit - FPS/Scenes/MyScene.unity
-    - Assets/Creator Kit - FPS/Scenes/ExampleScene.unity
+    sceneAssets: []
+    scenes: []
