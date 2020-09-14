@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 3591870238874689727, guid: 2b2cf21f8912a3a4282f862e9c1cf9c8, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8070109231507838667}
+      objectReference: {fileID: 0}
     - target: {fileID: 3591870238874689727, guid: 2b2cf21f8912a3a4282f862e9c1cf9c8, type: 3}
       propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: pickerUp, Assembly-CSharp
@@ -1856,10 +1856,10 @@ GameObject:
   m_Component:
   - component: {fileID: 413964095}
   - component: {fileID: 413964098}
-  - component: {fileID: 413964097}
   - component: {fileID: 413964096}
+  - component: {fileID: 413964097}
   m_Layer: 10
-  m_Name: lostobj_3
+  m_Name: lostobj_3_Wrench
   m_TagString: LostObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2131,8 +2131,8 @@ GameObject:
   m_Component:
   - component: {fileID: 472486174}
   - component: {fileID: 472486177}
-  - component: {fileID: 472486176}
   - component: {fileID: 472486175}
+  - component: {fileID: 472486176}
   m_Layer: 10
   m_Name: lostobj_6
   m_TagString: LostObj
@@ -2177,15 +2177,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 472486173}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca53de645213d64cae58a9477dfc474, type: 3}
+  m_Script: {fileID: 11500000, guid: e874c5f364ec90842853a90ba5af7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thePickPlace: {fileID: 86687464}
   btnPressed: 0
   isInPickZone: 0
-  isInWaterZone: 0
   indicatorPick: {fileID: 1826797008}
-  buscadorGameplay: {fileID: 263158810}
 --- !u!54 &472486177
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3264,8 +3262,8 @@ GameObject:
   m_Component:
   - component: {fileID: 757321216}
   - component: {fileID: 757321219}
-  - component: {fileID: 757321218}
   - component: {fileID: 757321217}
+  - component: {fileID: 757321218}
   m_Layer: 10
   m_Name: lostobj_4
   m_TagString: LostObj
@@ -3310,15 +3308,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 757321215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca53de645213d64cae58a9477dfc474, type: 3}
+  m_Script: {fileID: 11500000, guid: e874c5f364ec90842853a90ba5af7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thePickPlace: {fileID: 86687464}
   btnPressed: 0
   isInPickZone: 0
-  isInWaterZone: 0
   indicatorPick: {fileID: 1826797008}
-  buscadorGameplay: {fileID: 263158810}
 --- !u!54 &757321219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4004,7 +4000,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 8070109231507838667}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: pickerUp, Assembly-CSharp
         m_MethodName: BtnPress
         m_Mode: 1
@@ -4229,7 +4225,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8070109231507838667}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: pickerUp, Assembly-CSharp
         m_MethodName: BtnRelease
         m_Mode: 1
@@ -4460,7 +4456,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 8070109231507838667}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: pickerUp, Assembly-CSharp
         m_MethodName: BtnPress
         m_Mode: 1
@@ -4520,8 +4516,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1060306892}
   - component: {fileID: 1060306895}
-  - component: {fileID: 1060306894}
   - component: {fileID: 1060306893}
+  - component: {fileID: 1060306894}
   m_Layer: 10
   m_Name: lostobj_5
   m_TagString: LostObj
@@ -4566,15 +4562,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1060306891}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca53de645213d64cae58a9477dfc474, type: 3}
+  m_Script: {fileID: 11500000, guid: e874c5f364ec90842853a90ba5af7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thePickPlace: {fileID: 86687464}
   btnPressed: 0
   isInPickZone: 0
-  isInWaterZone: 0
   indicatorPick: {fileID: 1826797008}
-  buscadorGameplay: {fileID: 263158810}
 --- !u!54 &1060306895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4740,7 +4734,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8070109231507838667}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: pickerUp, Assembly-CSharp
         m_MethodName: BtnRelease
         m_Mode: 1
@@ -5095,7 +5089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1350392396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6088,8 +6082,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2090580751}
   - component: {fileID: 2090580754}
-  - component: {fileID: 2090580753}
   - component: {fileID: 2090580752}
+  - component: {fileID: 2090580753}
   m_Layer: 10
   m_Name: lostobj_7
   m_TagString: LostObj
@@ -6134,15 +6128,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2090580750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca53de645213d64cae58a9477dfc474, type: 3}
+  m_Script: {fileID: 11500000, guid: e874c5f364ec90842853a90ba5af7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thePickPlace: {fileID: 86687464}
   btnPressed: 0
   isInPickZone: 0
-  isInWaterZone: 0
   indicatorPick: {fileID: 1826797008}
-  buscadorGameplay: {fileID: 263158810}
 --- !u!54 &2090580754
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7802,6 +7794,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.07855422
       objectReference: {fileID: 0}
+    - target: {fileID: 8018042970361802698, guid: d1e4e6286fa7f884a81d17998307b3b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06
+      objectReference: {fileID: 0}
     - target: {fileID: 8200778040191651068, guid: d1e4e6286fa7f884a81d17998307b3b0, type: 3}
       propertyPath: m_Size.y
       value: 0.81676835
@@ -7890,8 +7886,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7162997210974586812}
   - component: {fileID: 1407279480707470259}
-  - component: {fileID: 8070109231507838667}
   - component: {fileID: 8070109231507838668}
+  - component: {fileID: 8070109231507838667}
   m_Layer: 10
   m_Name: lostobj_1
   m_TagString: LostObj
@@ -7908,15 +7904,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8070109231507838666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca53de645213d64cae58a9477dfc474, type: 3}
+  m_Script: {fileID: 11500000, guid: e874c5f364ec90842853a90ba5af7c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thePickPlace: {fileID: 86687464}
   btnPressed: 0
   isInPickZone: 0
-  isInWaterZone: 0
   indicatorPick: {fileID: 1826797008}
-  buscadorGameplay: {fileID: 263158810}
 --- !u!65 &8070109231507838668
 BoxCollider:
   m_ObjectHideFlags: 0
