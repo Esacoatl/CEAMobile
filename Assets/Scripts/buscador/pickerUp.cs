@@ -8,6 +8,10 @@ public class pickerUp : MonoBehaviour
 
     public bool btnPressed; 
     public bool isInPickZone;
+    public bool isInWaterZone;
+    public GameObject indicatorPick;
+
+    public buscadorGameplay buscadorGameplay;
 
     private void Start()
     {
@@ -15,22 +19,51 @@ public class pickerUp : MonoBehaviour
     }
     private void Update()
     {
-
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            BtnPress();
+        }
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            BtnRelease();
+        }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "waterSource_Buscador")
+        {
+            isInWaterZone = true;
+            buscadorGameplay.ToolInWater();
+        }
+    }
+
     public void OnTriggerStay(Collider other)
     {
-        //&& btnPressed
-        if (other.tag == "pickZone" && btnPressed)
+        if (other.tag == "pickZone")
         {
             isInPickZone = true;
+            indicatorPick.SetActive(true);
+        }
+
+        if (other.tag == "pickZone" && btnPressed)
+        {
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.position = thePickPlace.position;
             this.transform.parent = GameObject.Find("PickPlace").transform;
         } else
         {
-            isInPickZone = false;
             GetComponent<Rigidbody>().useGravity = true;
             this.transform.parent = null;
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "pickZone")
+        {
+            indicatorPick.SetActive(false);
+            isInPickZone = false;
         }
     }
 
@@ -43,17 +76,4 @@ public class pickerUp : MonoBehaviour
     {
         btnPressed = false;
     }
-
-    /*public void PickeUpAction()
-    {
-        GetComponent<Rigidbody>().useGravity = false;
-        this.transform.position = thePickPlace.position;
-        this.transform.parent = GameObject.Find("PickPlace").transform;
-    }
-
-    public void PickeUpDown()
-    {
-        GetComponent<Rigidbody>().useGravity = true;
-        this.transform.parent = null;
-    }*/
 }

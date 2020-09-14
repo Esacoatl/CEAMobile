@@ -5,7 +5,7 @@ using Lovatto.MobileInput;
 
 public class bl_MovementJoystick : MonoBehaviour
 {
-    [Range(0, 1)] public float RunningOnMagnitudeOf = 0.75f;
+    [Range(0, 1)] public float RunningOnMagnitudeOf = 0.50f;
     public AnimationCurve runningIconScale;
 
     public bl_JoystickBase sourceJoystick;

@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - LostObj
   - pickZone
+  - waterSource_Buscador
+  - waterSource_Shooter
   layers:
   - Default
   - TransparentFX
