@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class buscadorGameplay : MonoBehaviour
 {
@@ -16,13 +17,25 @@ public class buscadorGameplay : MonoBehaviour
     public GameObject gameoverScreen;
     public GameObject winScreen;
     public GameObject textDisplay;
-    public GameObject[] objectsLife = new GameObject[4];
-    public GameObject[] objectsEnemys = new GameObject[3];
+
+    public GameObject itemContainer;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        for(int i = 0; i < 20; i++)
+        {
+            GameObject item1 = itemContainer.transform.GetChild(Random.Range(0, itemContainer.transform.childCount)).gameObject;
+            GameObject item2 = itemContainer.transform.GetChild(Random.Range(0, itemContainer.transform.childCount)).gameObject;
+
+            Vector3 item1position = item1.transform.position;
+            item1.transform.position = item2.transform.position;
+            item2.transform.position = item1position;
+
+        }
+        //randomItem.transform.localScale = Vector3.one * 0.5f;
+        //randomItem.tag = "CorrectItem";
         textDisplay.GetComponent<Text>().text = "00:" + secondsLeft;
     }
 
