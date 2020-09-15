@@ -29,4 +29,15 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Loader_Buscador");
     }
+
+    public void PlayPipePuzle_1()
+    {
+        SceneManager.LoadScene("PipePuzzle_1");
+    }
+
+    public void PlayPipePuzle_1Loader()
+    {
+        SceneManager.LoadScene("Loader_PipePuzzle");
+    }
+
 }
