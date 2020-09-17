@@ -8,11 +8,14 @@ using Random = UnityEngine.Random;
 
 public class buscadorGameplay : MonoBehaviour
 {
-    //public float timeOfGame = 60f;
+    public float timeOfGame = 60f;
+    public float timeSlider = 60f;
     public int secondsLeft = 60;
     public bool gameover = false;
     public bool winLevel = false;
     public bool takingAway = false;
+
+    public Slider slider;
 
     public GameObject gameoverScreen;
     public GameObject winScreen;
@@ -52,11 +55,10 @@ public class buscadorGameplay : MonoBehaviour
             gameover = true;
             gameoverScreen.SetActive(true);
         }
-        /*timeOfGame -= Time.deltaTime;
-        if (timeOfGame < 0)
-        {
 
-        }*/
+        timeOfGame -= Time.deltaTime;
+        timeSlider = timeOfGame * 0.01f;
+        slider.value = secondsLeft;
     }
 
     IEnumerator TimerTake ()
