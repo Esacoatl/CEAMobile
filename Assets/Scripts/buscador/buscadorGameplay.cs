@@ -14,6 +14,7 @@ public class buscadorGameplay : MonoBehaviour
     public bool gameover = false;
     public bool winLevel = false;
     public bool takingAway = false;
+    int valueWin;
 
     public Slider slider;
     public Text litrosScoreText;
@@ -46,7 +47,7 @@ public class buscadorGameplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(takingAway == false && secondsLeft >= 0)
+        if(takingAway == false && secondsLeft > 0)
         {
             StartCoroutine(TimerTake());
         } 
@@ -85,13 +86,14 @@ public class buscadorGameplay : MonoBehaviour
         takingAway = true;
         winLevel = true;
         winScreen.SetActive(true);
+        valueWin = secondsLeft;
         litrosScoreText.text = secondsLeft.ToString() + " Litros";
     }
 
     public void WinLoad(string nextScene)
     {
 
-        int litrosTemp = PlayerPrefs.GetInt("litrosSum") + secondsLeft;
+        int litrosTemp = PlayerPrefs.GetInt("litrosSum") + valueWin;
         PlayerPrefs.SetInt("litrosSum", litrosTemp);
         PlayerPrefs.SetString("nextSceneName", nextScene);
         StartCoroutine(WaitCoroutine());

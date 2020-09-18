@@ -82,7 +82,7 @@ public class shooterGameplay : MonoBehaviour
     // win
     public void WinLoad(string nextScene)
     {
-        int waterLifeTemp = waterLife * 10;
+        int waterLifeTemp = waterLife * 20;
         int litrosTemp = PlayerPrefs.GetInt("litrosSum") + waterLifeTemp;
         PlayerPrefs.SetInt("litrosSum", litrosTemp);
         PlayerPrefs.SetString("nextSceneName", nextScene);
