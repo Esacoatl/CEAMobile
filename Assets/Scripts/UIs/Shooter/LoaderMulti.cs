@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class LevelLoaderPipePuzzle : MonoBehaviour
+public class LoaderMulti : MonoBehaviour
 {
-
     public GameObject loadingScreen;
     public Slider slider;
-    public Text progressText;
+    private static string sceneNameWorld;
+    //public Text progressText;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -16,7 +16,8 @@ public class LevelLoaderPipePuzzle : MonoBehaviour
     /// </summary>
     void Start()
     {
-        LoadLevelByName("1_ArroyoShoot");
+        sceneNameWorld = GameWorldValues.sceneNameStr;
+        LoadLevelByName(sceneNameWorld);
     }
 
     public void LoadLevelByName(string sceneName)
@@ -42,7 +43,7 @@ public class LevelLoaderPipePuzzle : MonoBehaviour
             float progress = Mathf.Clamp01(operation.progress / .9f);
             slider.value = progress;
             int realProg = (int)progress;
-            progressText.text = realProg * 100 + "%";
+            //progressText.text = realProg * 100 + "%";
             yield return null;
         }
     }

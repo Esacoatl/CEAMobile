@@ -8,7 +8,7 @@ public class LevelLoader : MonoBehaviour
 {
     public GameObject loadingScreen;
     public Slider slider;
-    public Text progressText;
+    //public Text progressText;
     public float transitionTime = 1f;
 
     /// <summary>
@@ -44,7 +44,7 @@ public class LevelLoader : MonoBehaviour
             float progress = Mathf.Clamp01(operation.progress / .9f);
             slider.value = progress;
             int realProg = (int)progress;
-            progressText.text = realProg * 100 + "%";
+            //progressText.text = realProg * 100 + "%";
             yield return null;
         }
     }
@@ -65,7 +65,7 @@ public class LevelLoader : MonoBehaviour
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
             slider.value = progress;
-            progressText.text = progress * 100f + "%";
+            //progressText.text = progress * 100f + "%";
             yield return null;
         }
     }

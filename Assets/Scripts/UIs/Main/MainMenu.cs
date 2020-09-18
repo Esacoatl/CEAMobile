@@ -10,34 +10,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }*/
 
-    public void PlayArroyoShoot_1Loader()
+    public void loadSplashScreen()
     {
-        SceneManager.LoadScene("Loader_Shooter");
-    }
-    public void PlayArroyoShoot_1()
-    {
-        SceneManager.LoadScene("1_ArroyoShoot");
-    }
-
-
-    public void PlayBuscador_1()
-    {
-        SceneManager.LoadScene("1_Buscador");
-    }
-
-    public void PlayBuscador_1Loader()
-    {
-        SceneManager.LoadScene("Loader_Buscador");
-    }
-
-    public void PlayPipePuzle_1()
-    {
-        SceneManager.LoadScene("PipePuzzle_1");
-    }
-
-    public void PlayPipePuzle_1Loader()
-    {
-        SceneManager.LoadScene("Loader_PipePuzzle");
+        SceneManager.LoadScene("MultiLoader");
     }
 
 }
