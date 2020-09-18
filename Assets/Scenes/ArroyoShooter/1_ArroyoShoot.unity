@@ -2112,7 +2112,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 263158810}
         m_TargetAssemblyTypeName: shooterGameplay, Assembly-CSharp
-        m_MethodName: GameOverLoad
+        m_MethodName: WinLoad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

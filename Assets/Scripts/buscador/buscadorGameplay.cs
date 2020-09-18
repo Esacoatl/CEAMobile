@@ -85,21 +85,21 @@ public class buscadorGameplay : MonoBehaviour
         winScreen.SetActive(true);
     }
 
-    public void WinLoad()
+    public void WinLoad(string nextScene)
     {
-        StartCoroutine(WaitCoroutine());
+        StartCoroutine(WaitCoroutine(nextScene));
     }
 
-    public void WinLoadSceneMain()
+    public void WinLoadSceneMain(string nextScene)
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(nextScene);
     }
 
-    IEnumerator WaitCoroutine()
+    IEnumerator WaitCoroutine(string nextScene)
     {
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(3);
-        WinLoadSceneMain();
+        WinLoadSceneMain(nextScene);
     }
 
     // gameover

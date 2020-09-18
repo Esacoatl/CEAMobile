@@ -83,7 +83,7 @@ public class shooterGameplay : MonoBehaviour
 
     public void WinLoadSceneMain()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MultiLoader");
     }
 
     IEnumerator WaitCoroutine()

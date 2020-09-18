@@ -12,24 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainUI/MainMenu.unity
     guid: cf484da951730364ea67c2c32dd08a6d
   - enabled: 1
-    path: Assets/Scenes/MainUI/Loader_Shooter.unity
-    guid: 19fdc4143553bc540bfb452da7533265
+    path: Assets/Scenes/MainUI/MultiLoader.unity
+    guid: 2cb089fcae2351849acbc274366a0ddc
   - enabled: 1
     path: Assets/Scenes/ArroyoShooter/1_ArroyoShoot.unity
     guid: 1ee4d41bc2de5c84ea1c796d7a167530
   - enabled: 1
-    path: Assets/Scenes/MainUI/Loader_Buscador.unity
-    guid: e1f6328389e101b4398fa0161ca34f77
-  - enabled: 1
     path: Assets/Scenes/Buscador/1_Buscador.unity
     guid: 0e3cb7d964b85e142b35984b02f1ffb9
   - enabled: 1
-    path: Assets/Scenes/MainUI/Loader_PipePuzzle.unity
-    guid: 58cc12a1ae77e4c96bc8bd6706307b9a
-  - enabled: 1
     path: Assets/Scenes/PipePuzzle/PipePuzzle_1.unity
     guid: bbb2cbeb0427b4e72988c8e37ebae21e
-  - enabled: 1
-    path: Assets/Scenes/MainUI/MultiLoader.unity
-    guid: 2cb089fcae2351849acbc274366a0ddc
   m_configObjects: {}
