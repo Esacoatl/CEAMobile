@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Security.Policy;
 using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    public static SaveManager Instance { set; get; }
+   /* public static SaveManager Instance { set; get; }
     public SaveState state;
 
     public void Awake()
@@ -36,6 +35,6 @@ public class SaveManager : MonoBehaviour
             Save();
             Debug.Log("Creando Archivo de Guardado");
         }
-    }
+    }*/
 
 }

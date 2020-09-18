@@ -1,10 +1,10 @@
-﻿using System.IO;
-using System.Xml.Serialization;
+﻿//using System.IO;
+//using System.Xml.Serialization;
 
 public static class Helper
 {
     // serialize
-    public static string Serialize<T>(this T toSerialize)
+    /*public static string Serialize<T>(this T toSerialize)
     {
         XmlSerializer xml = new XmlSerializer(typeof(T));
         StringWriter writer = new StringWriter();
@@ -20,5 +20,5 @@ public static class Helper
         StringReader reader = new StringReader(toDeserialize);
         return (T)xml.Deserialize(reader);
 
-    }
+    }*/
 }
