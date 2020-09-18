@@ -82,6 +82,7 @@ public class buscadorGameplay : MonoBehaviour
     // win
     public void ToolInWater()
     {
+        takingAway = true;
         winLevel = true;
         winScreen.SetActive(true);
         litrosScoreText.text = secondsLeft.ToString() + " Litros";
@@ -89,6 +90,7 @@ public class buscadorGameplay : MonoBehaviour
 
     public void WinLoad(string nextScene)
     {
+
         int litrosTemp = PlayerPrefs.GetInt("litrosSum") + secondsLeft;
         PlayerPrefs.SetInt("litrosSum", litrosTemp);
         PlayerPrefs.SetString("nextSceneName", nextScene);
@@ -112,6 +114,7 @@ public class buscadorGameplay : MonoBehaviour
 
     public void GameOverLoad()
     {
+        takingAway = true;
         StartCoroutine(WaitCoroutineGameover());
     }
 
