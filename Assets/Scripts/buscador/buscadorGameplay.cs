@@ -16,6 +16,7 @@ public class buscadorGameplay : MonoBehaviour
     public bool takingAway = false;
 
     public Slider slider;
+    public Text litrosScoreText;
 
     public GameObject gameoverScreen;
     public GameObject winScreen;
@@ -83,23 +84,28 @@ public class buscadorGameplay : MonoBehaviour
     {
         winLevel = true;
         winScreen.SetActive(true);
+        litrosScoreText.text = secondsLeft.ToString() + " Litros";
     }
 
     public void WinLoad(string nextScene)
     {
-        StartCoroutine(WaitCoroutine(nextScene));
+        int litrosTemp = PlayerPrefs.GetInt("litrosSum") + secondsLeft;
+        PlayerPrefs.SetInt("litrosSum", litrosTemp);
+        PlayerPrefs.SetString("nextSceneName", nextScene);
+        StartCoroutine(WaitCoroutine());
+
     }
 
-    public void WinLoadSceneMain(string nextScene)
+    public void WinLoadSceneMain()
     {
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene("MultiLoader");
     }
 
-    IEnumerator WaitCoroutine(string nextScene)
+    IEnumerator WaitCoroutine()
     {
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(3);
-        WinLoadSceneMain(nextScene);
+        WinLoadSceneMain();
     }
 
     // gameover

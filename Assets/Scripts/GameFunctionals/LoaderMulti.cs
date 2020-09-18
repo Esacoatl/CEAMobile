@@ -16,7 +16,8 @@ public class LoaderMulti : MonoBehaviour
     /// </summary>
     void Start()
     {
-        sceneNameWorld = GameWorldValues.sceneNameStr;
+        sceneNameWorld = PlayerPrefs.GetString("nextSceneName");
+        //sceneNameWorld = GameWorldValues.sceneNameStr;
         LoadLevelByName(sceneNameWorld);
     }
 

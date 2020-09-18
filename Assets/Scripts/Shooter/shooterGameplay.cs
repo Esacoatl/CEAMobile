@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class shooterGameplay : MonoBehaviour
@@ -15,6 +16,8 @@ public class shooterGameplay : MonoBehaviour
     public bool gameover = false;
     public bool winLevel = false;
     public bool spawnEnd = false;
+
+    public Text litrosScoreText;
 
     public GameObject gameoverScreen;
     public GameObject winScreen;
@@ -71,13 +74,18 @@ public class shooterGameplay : MonoBehaviour
         {
             winLevel = true;
             winScreen.SetActive(true);
+            int waterLifeTemp = waterLife * 10;
+            litrosScoreText.text = waterLifeTemp.ToString() + " Litros";
         }
     }
 
     // win
-
-    public void WinLoad()
+    public void WinLoad(string nextScene)
     {
+        int waterLifeTemp = waterLife * 10;
+        int litrosTemp = PlayerPrefs.GetInt("litrosSum") + waterLifeTemp;
+        PlayerPrefs.SetInt("litrosSum", litrosTemp);
+        PlayerPrefs.SetString("nextSceneName", nextScene);
         StartCoroutine(WaitCoroutine());
     }
 
