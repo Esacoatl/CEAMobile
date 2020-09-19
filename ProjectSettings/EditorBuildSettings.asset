@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Memorama/1_Memorama.unity
     guid: 7a136f37bf9fe594eb11721d83d8382e
+  - enabled: 1
+    path: Assets/Scenes/PipePuzzle/1_Pipes.unity
+    guid: ee1dbffd0b9faa74eae02a1462cecaf6
   m_configObjects: {}
