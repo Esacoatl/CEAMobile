@@ -9,6 +9,8 @@ TagManager:
   - pickZone
   - waterSource_Buscador
   - waterSource_Shooter
+  - Piece
+  - Canvas
   layers:
   - Default
   - TransparentFX
