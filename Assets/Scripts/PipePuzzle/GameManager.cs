@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
 			int litrosTemp = PlayerPrefs.GetInt("litrosSum") + timelts;
 			PlayerPrefs.SetInt("litrosSum", litrosTemp);
 			litrosMensaje.text = timelts.ToString() + " litros";
-			Debug.Log(litrosTemp);
+			//Debug.Log(litrosTemp);
 		}
 				
 	}
@@ -210,7 +210,7 @@ public class GameManager : MonoBehaviour
 					if (puzzle.pieces[w, h].values[0] == 1 && puzzle.pieces[w, h + 1].values[2] == 1)
 					{
 						value1++;
-						Debug.Log("Pase la primera suma");
+						//Debug.Log("Pase la primera suma");
 					}
 				}
 
@@ -220,13 +220,13 @@ public class GameManager : MonoBehaviour
 					if (puzzle.pieces[w, h].values[1] == 1 && puzzle.pieces[w + 1, h].values[3] == 1)
 					{
 						value1++;
-						Debug.Log("Pase la segunda suma");
+						//Debug.Log("Pase la segunda suma");
 					}
 				}
 			}
 
 		}
-		Debug.Log("sume los valores");
+		//Debug.Log("sume los valores");
 		return value1;
 
 	}
@@ -329,7 +329,6 @@ public class GameManager : MonoBehaviour
 			if (p.transform.position.y > aux.y)
 				aux.y = p.transform.position.y;
 		}
-
 		aux.x++;
 		aux.y++;
 
@@ -339,24 +338,20 @@ public class GameManager : MonoBehaviour
 
 	public void NextLevel(string nextLevel)
 	{
-
-		SceneManager.LoadScene(nextLevel);
-
+		PlayerPrefs.SetString("nextSceneName", nextLevel);
+		//SceneManager.LoadScene(nextLevel);
+		StartCoroutine(WaitWinCoroutine());
 	}
 
 
 	public void Update()
 	{
-
-
 		time = gameTime - Time.timeSinceLevelLoad;
 
 		int minutes = Mathf.FloorToInt(time / 60);
 		int seconds = Mathf.FloorToInt(time - minutes * 60);
 
 		string textTime = string.Format("{0:0}:{1:00}", minutes, seconds);
-
-
 
 		if (time <= 0)
 		{
@@ -368,18 +363,19 @@ public class GameManager : MonoBehaviour
 			stopTimer = true;
 		}
 
-
-
 		if (stopTimer == false)
 		{
 			timerText.text = textTime;
 			timerSlider.value = time;
 
 		}
+	}
 
-
-
-
+	IEnumerator WaitWinCoroutine()
+	{
+		//yield on a new YieldInstruction that waits for 5 seconds.
+		yield return new WaitForSeconds(3);
+		WinLoadSceneMain();
 	}
 
 	public void WinLoadSceneMain()
