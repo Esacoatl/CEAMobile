@@ -23,6 +23,8 @@ public class buscadorGameplay : MonoBehaviour
     public GameObject winScreen;
     public GameObject textDisplay;
 
+    public GameObject waterSourceObj;
+
     public GameObject itemContainer;
 
 
@@ -83,6 +85,7 @@ public class buscadorGameplay : MonoBehaviour
     // win
     public void ToolInWater()
     {
+        waterSourceObj.SetActive(false);
         takingAway = true;
         winLevel = true;
         winScreen.SetActive(true);

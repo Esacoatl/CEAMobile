@@ -11,6 +11,7 @@ TagManager:
   - waterSource_Shooter
   - Piece
   - Canvas
+  - PipeRotateSound
   layers:
   - Default
   - TransparentFX

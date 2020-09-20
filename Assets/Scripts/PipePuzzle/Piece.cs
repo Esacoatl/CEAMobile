@@ -10,10 +10,9 @@ public class Piece : MonoBehaviour
 	public float speed;
 	float realRotation;
 	bool flagWin = true;
-
+	int flagSound = 0;
+	public AudioSource soundPipe;
 	public GameManager gm;
-
-
 
 	void Start()
 	{
@@ -22,8 +21,6 @@ public class Piece : MonoBehaviour
 
 	void Update()
 	{
-
-
 		if (transform.root.eulerAngles.z != realRotation)
 		{
 			transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, realRotation), speed);
@@ -42,14 +39,12 @@ public class Piece : MonoBehaviour
 				gm.Lose();
 			}
 		}
-
 	}
 
 
 
 	void OnMouseDown()
 	{
-
 		int diff = -gm.QuickSweep((int)transform.position.x, (int)transform.position.y);
 
 		if (GameObject.FindGameObjectWithTag("Canvas") == false)
@@ -62,13 +57,16 @@ public class Piece : MonoBehaviour
 		diff += gm.QuickSweep((int)transform.position.x, (int)transform.position.y);
 
 		gm.puzzle.curValue += diff;
-
-
 	}
 
 	public void RotatePiece()
 	{
-		
+		int flagSoundPipes = PlayerPrefs.GetInt("pipesSoundBool");
+		soundPipe = GameObject.FindGameObjectWithTag("PipeRotateSound").GetComponent<AudioSource>();
+		if (flagSoundPipes > 0)
+        {
+			soundPipe.Play();
+		}
 		realRotation += 90;
 
 		if (realRotation == 360)

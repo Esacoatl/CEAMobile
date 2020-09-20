@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
 
 	void Start()
 	{
+		PlayerPrefs.SetInt("pipesSoundBool", 0);
 		stopTimer = false;
 		timerSlider.maxValue = gameTime;
 		timerSlider.value = gameTime;
@@ -88,6 +89,11 @@ public class GameManager : MonoBehaviour
 
 
 
+	}
+
+	public void soundActivePipes()
+    {
+		PlayerPrefs.SetInt("pipesSoundBool", 1);
 	}
 
 	public void Win()
