@@ -2863,7 +2863,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: 5_Pipes
           m_BoolArgument: 0
         m_CallState: 2
   onTweenCreated:
@@ -4579,7 +4579,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1511688538406066854, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 354.4
+      value: -55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538406066854, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538406066854, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538406066854, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538406066854, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1511688538826546465, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
