@@ -32,4 +32,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ArroyoShooter/2_ArroyoShoot.unity
     guid: 12160afcbc46a5b4eb66989bf4f9b702
+  - enabled: 1
+    path: Assets/Scenes/PipePuzzle/2_Pipes.unity
+    guid: 4dda3ad599fc3498b99a044b44c26476
+  - enabled: 1
+    path: Assets/Scenes/PipePuzzle/3_Pipes.unity
+    guid: 524d321496f29464688a23c4088aca51
+  - enabled: 1
+    path: Assets/Scenes/PipePuzzle/4_Pipes.unity
+    guid: 7307bfc73cbd8415ab8899e345fd1202
+  - enabled: 1
+    path: Assets/Scenes/PipePuzzle/5_Pipes.unity
+    guid: 77e5e593aabcf402cbde0a6cf92c6853
   m_configObjects: {}

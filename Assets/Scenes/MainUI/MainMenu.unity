@@ -1744,7 +1744,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1077069058}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayArroyoShoot_1Loader
+        m_MethodName: loadSplashScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1764,6 +1764,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1221680152}
+        m_TargetAssemblyTypeName: GameWorldValues, Assembly-CSharp
+        m_MethodName: SetNombreScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 3_Pipes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &228675888
@@ -1858,7 +1870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   updateType: 0
   isSpeedBased: 0
-  hasOnStart: 1
+  hasOnStart: 0
   hasOnPlay: 0
   hasOnUpdate: 0
   hasOnStepComplete: 0
@@ -1994,7 +2006,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1077069058}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayArroyoShoot_1Loader
+        m_MethodName: loadSplashScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2014,6 +2026,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1221680152}
+        m_TargetAssemblyTypeName: GameWorldValues, Assembly-CSharp
+        m_MethodName: SetNombreScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 2_Pipes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &251624066
@@ -6535,7 +6559,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1077069058}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayArroyoShoot_1Loader
+        m_MethodName: loadSplashScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6555,6 +6579,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1221680152}
+        m_TargetAssemblyTypeName: GameWorldValues, Assembly-CSharp
+        m_MethodName: SetNombreScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 4_Pipes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &805853611
@@ -9165,7 +9201,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nivel 5
+  m_Text: 'Nivel 5 - La Industria
+
+'
 --- !u!222 &1027408842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9364,7 +9402,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1077069058}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayArroyoShoot_1Loader
+        m_MethodName: loadSplashScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9384,6 +9422,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1221680152}
+        m_TargetAssemblyTypeName: GameWorldValues, Assembly-CSharp
+        m_MethodName: SetNombreScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 5_Pipes
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1042193608
@@ -9914,7 +9964,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nivel 2
+  m_Text: Nivel 2 - La Granja
 --- !u!222 &1105069780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10507,7 +10557,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nivel 1
+  m_Text: Nivel 1 - La Casa
 --- !u!222 &1212574342
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12387,7 +12437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nivel 3
+  m_Text: Nivel 3 - La Ciudad
 --- !u!222 &1427250420
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13244,7 +13294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nivel 4
+  m_Text: Nivel 4 - La Oficina
 --- !u!222 &1533839804
 CanvasRenderer:
   m_ObjectHideFlags: 0
