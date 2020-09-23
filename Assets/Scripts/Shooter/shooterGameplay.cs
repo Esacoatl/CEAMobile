@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class shooterGameplay : MonoBehaviour
 {
     //public int enemysCount = 3;
-    public float timeEnemySpawn;
+    public float timeEnemySpawn = 7f;
     public int waterLife;
     public int enemySpawnCount;
     public int enemyDeadCorpseCount;
@@ -28,7 +28,6 @@ public class shooterGameplay : MonoBehaviour
     void Start()
     {
         waterLife = 3;
-        timeEnemySpawn = 7f;
         tempEnemyTime = timeEnemySpawn;
         enemySpawnCount = objectsEnemys.Length;
         enemyDeadCorpseCount = objectsEnemys.Length;

@@ -3661,7 +3661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c57a370d7390d499749a6aec554b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeEnemySpawn: 0
+  timeEnemySpawn: 7
   waterLife: 0
   enemySpawnCount: 0
   enemyDeadCorpseCount: 0
@@ -6806,10 +6806,10 @@ PrefabInstance:
     - target: {fileID: 7082091381638137656, guid: b7ee0ee1268d0c14082c00f0cd72cc88, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 87369b245e500c44dbc7aa979166b3d5, type: 3}
+      objectReference: {fileID: 8300000, guid: 3ebe639a36503cd43b6f6abf3d6c2cc1, type: 3}
     - target: {fileID: 7082091381638137656, guid: b7ee0ee1268d0c14082c00f0cd72cc88, type: 3}
       propertyPath: m_Volume
-      value: 0.175
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7082091381638137656, guid: b7ee0ee1268d0c14082c00f0cd72cc88, type: 3}
       propertyPath: Loop
@@ -24075,6 +24075,14 @@ PrefabInstance:
     - target: {fileID: 1511688538166047796, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
       propertyPath: m_Color.a
       value: 0.92156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538166047797, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6.299988
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511688538166047797, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 72.107666
       objectReference: {fileID: 0}
     - target: {fileID: 1511688538166047798, guid: 4f503cb7ab759584985e7e8d05e85ae6, type: 3}
       propertyPath: m_IsActive
