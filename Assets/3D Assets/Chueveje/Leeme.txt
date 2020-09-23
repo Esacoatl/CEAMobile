@@ -1,0 +1,14 @@
+Animaciones:
+
+Exponiendo:   2 - 183
+Caminando:  222 - 254
+Saltando:   185 - 220
+Reposando:  256 - 307
+
+Para hacer el modelo smooth se requiere:
+
+Model           ->
+Normals         ->   Calculate
+Smoothing Angle ->   130
+
+

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!111 &2023232854
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803844161243209097}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 1827226128182048838, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &2023232856
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803844161243209097}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 6da17b6fc3392da4e825d247643b1afe, type: 3}
+  m_Controller: {fileID: 9100000, guid: 41bb8f5a8b2342d4cad383870aac7e1e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &6957422861122625752
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.07
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3700006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.53
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5930939
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8051334
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 72.754
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+      propertyPath: m_Name
+      value: Modelo_Chuveje_PrefabAnim
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+--- !u!1 &7803844161243209097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
+  m_PrefabInstance: {fileID: 6957422861122625752}
+  m_PrefabAsset: {fileID: 0}
