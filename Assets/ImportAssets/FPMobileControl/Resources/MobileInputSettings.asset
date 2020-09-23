@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: MobileInputSettings
   m_EditorClassIdentifier: 
   m_UseKeyboardOnEditor: 1
-  touchPadVerticalSensitivity: 6
-  touchPadHorizontalSensitivity: 6
+  touchPadVerticalSensitivity: 4
+  touchPadHorizontalSensitivity: 4
   useAutoFire: 1
   waitBeforeFire: 0.7
   viewDetectionRange: 50
