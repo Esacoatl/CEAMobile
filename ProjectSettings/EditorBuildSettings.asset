@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ArroyoShooter/4_ArroyoShoot.unity
     guid: dcdab2d4caa3ac34c858b3f752b34b44
   - enabled: 1
+    path: Assets/Scenes/ArroyoShooter/5_ArroyoShoot.unity
+    guid: 6deeab234c9491b44ac30022a42831ff
+  - enabled: 1
     path: Assets/Scenes/Buscador/1_Buscador.unity
     guid: 0e3cb7d964b85e142b35984b02f1ffb9
   - enabled: 1
