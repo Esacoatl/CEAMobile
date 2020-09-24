@@ -4890,7 +4890,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Felicidades! salvaste
+  m_Text: Felicidades! Ahorraste
 --- !u!222 &1642891867
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6567,7 +6567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2298997025188255084, guid: 0b93d27b6372749a4b91924cd399a091, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9999999
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2298997026481377296, guid: 0b93d27b6372749a4b91924cd399a091, type: 3}
       propertyPath: m_LocalPosition.x
