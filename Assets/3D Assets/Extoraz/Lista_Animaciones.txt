@@ -1,0 +1,8 @@
+extoraz y ayutla
+
+explicando:      1   - 182
+salto lento:     185 - 219
+caminar:         222 - 253
+stand by:        256 - 306
+correr:          309 - 329
+salto rapido:    332 - 348

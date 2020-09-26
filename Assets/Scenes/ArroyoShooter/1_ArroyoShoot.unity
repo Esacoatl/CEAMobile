@@ -13136,71 +13136,6 @@ MonoBehaviour:
   MotionVectors: 0
   SkinnedQuality: 1
   skinned: 0
---- !u!1001 &1153915421
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2023232854, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: 7010834888840427776, guid: f26b29186e7f3a649a117646f5422ceb, type: 3}
-    - target: {fileID: 2023232856, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 63d53b21adfb3b044b540e23808014ba, type: 2}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6787626
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7343578
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 85.494
-      objectReference: {fileID: 0}
-    - target: {fileID: 7423905017189893939, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7803844161243209097, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
-      propertyPath: m_Name
-      value: Modelo_Chuveje_PrefabAnim Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
 --- !u!114 &1155057427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14967,7 +14902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1350392396
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24910,6 +24845,63 @@ Transform:
   m_Father: {fileID: 4970254115244667095}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4072389949825001273
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3766523062150044353, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_Name
+      value: Modelo_Extoraz
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.63743436
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.77050465
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 79.202
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543763036924887163, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 982cf85d35a2113438d5d3ee6e3f5d72, type: 3}
 --- !u!114 &4724183503278674792
 MonoBehaviour:
   m_ObjectHideFlags: 0
