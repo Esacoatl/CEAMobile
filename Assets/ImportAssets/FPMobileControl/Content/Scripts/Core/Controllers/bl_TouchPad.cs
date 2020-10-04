@@ -7,8 +7,8 @@ public static class bl_TouchPad
     public static float Vertical
     {
         get
-        {           
-#if UNITY_EDITOR
+        {
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
             if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
             {
                 return Input.GetAxis("Mouse Y");
@@ -23,7 +23,7 @@ public static class bl_TouchPad
     {
         get
         {
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
             if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
             {
                 return Input.GetAxis("Mouse X");
@@ -49,7 +49,7 @@ public static class bl_TouchPad
     /// <returns></returns>
     public static Vector2 GetInput(float sensitivity = 0)
     {
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
         if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
         {
             input.x = Input.GetAxis("Mouse X");

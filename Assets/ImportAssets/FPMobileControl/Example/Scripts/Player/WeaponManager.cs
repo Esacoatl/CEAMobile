@@ -13,7 +13,7 @@ namespace Lovatto.MobileInput
         public Controller controller;
 
         int m_CurrentWeapon;
-        List<Weapon> m_Weapons = new List<Weapon>();
+        List<Weapon> m_Weapons = new List<Weapon>(); 
         Dictionary<int, int> m_AmmoInventory = new Dictionary<int, int>();
 
         public Weapon CurrentWeapon => m_Weapons[m_CurrentWeapon];

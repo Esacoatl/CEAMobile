@@ -186,7 +186,7 @@ public class bl_MobileButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         }
     }
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
     void OnValidate()
     {
         if (buttonGraphics == null) return;

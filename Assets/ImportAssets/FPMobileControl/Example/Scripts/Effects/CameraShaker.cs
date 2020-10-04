@@ -15,7 +15,7 @@ public class CameraShaker : MonoBehaviour
         Instance = this;
         m_OriginalPosition = transform.localPosition;
     }
-
+     
     void Update()
     {
         if (m_RemainingShakeTime > 0)

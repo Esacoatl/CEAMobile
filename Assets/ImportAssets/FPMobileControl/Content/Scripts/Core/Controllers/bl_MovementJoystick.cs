@@ -17,7 +17,7 @@ public class bl_MovementJoystick : MonoBehaviour
     {
         get
         {
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
             if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
             {
                 return Input.GetAxis("Vertical");
@@ -34,7 +34,7 @@ public class bl_MovementJoystick : MonoBehaviour
         get
         {
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
             if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
             {
                 return Input.GetAxis("Horizontal");
@@ -49,7 +49,7 @@ public class bl_MovementJoystick : MonoBehaviour
     {
         get
         {
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
             if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
             {
                 return Input.GetKeyDown(KeyCode.LeftShift);
@@ -72,7 +72,7 @@ public class bl_MovementJoystick : MonoBehaviour
         runningIndicator.localScale = Vector3.one * runningIconScale.Evaluate(percentage);
     }
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
     private void OnValidate()
     {
         if (runningIndicator == null || stickTransform == null) return;
