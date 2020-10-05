@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ImportAssets/PolygonFarm/Demo/Demo_Original_NoLight.unity
-    guid: 857b27df51616a84f9d1369e1f357581
+    path: Assets/Scenes/MainUI/MainMenu.unity
+    guid: cf484da951730364ea67c2c32dd08a6d
+  - enabled: 1
+    path: Assets/Scenes/MainUI/MultiLoader.unity
+    guid: 2cb089fcae2351849acbc274366a0ddc
   m_configObjects: {}
