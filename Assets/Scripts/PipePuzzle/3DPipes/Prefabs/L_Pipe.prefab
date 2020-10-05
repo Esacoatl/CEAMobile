@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   values: 01000000000000000000000001000000
   speed: 0.3
+  soundPipe: {fileID: 0}
   gm: {fileID: 0}
 --- !u!65 &4842834623327717037
 BoxCollider:
