@@ -103,6 +103,13 @@ public class buscadorGameplay : MonoBehaviour
 
     }
 
+    public void LoseLoadOptions(string nextScene)
+    {
+        PlayerPrefs.SetString("nextSceneName", nextScene);
+        WinLoadSceneMain();
+
+    }
+
     public void WinLoadSceneMain()
     {
         SceneManager.LoadScene("MultiLoader");
