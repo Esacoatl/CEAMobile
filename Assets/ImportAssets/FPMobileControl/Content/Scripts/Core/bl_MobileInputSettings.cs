@@ -23,7 +23,7 @@ namespace Lovatto.MobileInput
         {
             get
             {
-#if !UNITY_EDITOR
+#if !UNITY_EDITOR && !UNITY_WEBGL && !UNITY_STANDALONE
                 return false;
 #else
                 return m_UseKeyboardOnEditor;

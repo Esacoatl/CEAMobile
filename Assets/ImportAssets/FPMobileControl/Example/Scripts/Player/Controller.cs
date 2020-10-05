@@ -67,8 +67,10 @@ namespace Lovatto.MobileInput
         /// </summary>
         void Start()
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
+
+            DisplayCursor(true);
 
             m_IsPaused = false;
             m_Grounded = true;

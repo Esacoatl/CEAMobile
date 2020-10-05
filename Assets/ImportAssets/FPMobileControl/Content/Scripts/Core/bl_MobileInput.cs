@@ -60,7 +60,7 @@ public static class bl_MobileInput
     public static bool GetButton(string buttonName)
     {
         if (!mobileButtons.ContainsKey(buttonName)) { Debug.LogWarning($"The button '{buttonName}' is not registered in the mobile input buttons."); return false; }
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
         if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
         {
             return Input.GetKey(mobileButtons[buttonName].fallBackKey);
@@ -77,7 +77,7 @@ public static class bl_MobileInput
     public static bool GetButtonDown(string buttonName)
     {
         if (!mobileButtons.ContainsKey(buttonName)) { Debug.LogWarning($"The button '{buttonName}' is not registered in the mobile input buttons."); return false; }
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
         if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
         {
             return Input.GetKeyDown(mobileButtons[buttonName].fallBackKey);
@@ -94,7 +94,7 @@ public static class bl_MobileInput
     public static bool GetButtonUp(string buttonName)
     {
         if (!mobileButtons.ContainsKey(buttonName)) { Debug.LogWarning($"The button '{buttonName}' is not registered in the mobile input buttons."); return false; }
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_WEBGL || UNITY_STANDALONE
         if (bl_MobileInputSettings.Instance.UseKeyboardOnEditor)
         {
             return Input.GetKeyUp(mobileButtons[buttonName].fallBackKey);
