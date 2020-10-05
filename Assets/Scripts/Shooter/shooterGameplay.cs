@@ -56,6 +56,13 @@ public class shooterGameplay : MonoBehaviour
 
     public void BichoToWater()
     {
+        StartCoroutine(BichoToWaterCoroutine());
+    }
+
+    IEnumerator BichoToWaterCoroutine()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(4);
         objectsLife[waterLife].SetActive(false);
         waterLife--;
         objectsLife[waterLife].SetActive(true);
@@ -86,6 +93,13 @@ public class shooterGameplay : MonoBehaviour
         PlayerPrefs.SetInt("litrosSum", litrosTemp);
         PlayerPrefs.SetString("nextSceneName", nextScene);
         StartCoroutine(WaitCoroutine());
+    }
+
+    // lose
+    public void LoseLoadOption(string nextScene)
+    {
+        PlayerPrefs.SetString("nextSceneName", nextScene);
+        WinLoadSceneMain();
     }
 
     public void WinLoadSceneMain()
