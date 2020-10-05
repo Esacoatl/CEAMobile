@@ -349,6 +349,12 @@ public class GameManager : MonoBehaviour
 		StartCoroutine(WaitWinCoroutine());
 	}
 
+	public void NextLevelLoseOption(string nextLevel)
+	{
+		PlayerPrefs.SetString("nextSceneName", nextLevel);
+		WinLoadSceneMain();
+	}
+
 
 	public void Update()
 	{
