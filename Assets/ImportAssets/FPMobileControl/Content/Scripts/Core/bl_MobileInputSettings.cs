@@ -14,7 +14,7 @@ namespace Lovatto.MobileInput
 
         [Header("Auto Fire Settings")]
         public bool useAutoFire = false;
-        public float waitBeforeFire = 1;
+        public float waitBeforeFire = 0.25f;
         public float viewDetectionRange = 50;
         [Tooltip("Frame Rate of the raycast detection, 1 = a raycast per frame")]
         public int detectRate = 10;
