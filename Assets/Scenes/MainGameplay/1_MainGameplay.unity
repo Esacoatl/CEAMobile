@@ -3018,6 +3018,66 @@ MonoBehaviour:
   - {fileID: 1507625646}
   - {fileID: 1401947492}
   - {fileID: 281528318}
+--- !u!1 &249098505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 249098506}
+  - component: {fileID: 249098508}
+  - component: {fileID: 249098507}
+  m_Layer: 0
+  m_Name: TriggerMessage
+  m_TagString: ChuveMessArea
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &249098506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249098505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 335172762}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &249098507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249098505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8890102ad97f98c40a13f051fa0d2641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationIn: InChuvejeMission
+  animationOut: OutChuvejeMission
+  mensajeCanvas: {fileID: 264238863}
+--- !u!65 &249098508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249098505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4188348, y: 0.30780613, z: 0.37898868}
+  m_Center: {x: 0.03198366, y: 0.15277883, z: 0.020077357}
 --- !u!114 &249699192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3355,7 +3415,7 @@ MonoBehaviour:
   hasOnPlay: 0
   hasOnUpdate: 0
   hasOnStepComplete: 0
-  hasOnComplete: 0
+  hasOnComplete: 1
   hasOnTweenCreated: 0
   hasOnRewind: 0
   onStart:
@@ -3372,7 +3432,19 @@ MonoBehaviour:
       m_Calls: []
   onComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 264238863}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onTweenCreated:
     m_PersistentCalls:
       m_Calls: []
@@ -3383,7 +3455,7 @@ MonoBehaviour:
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
   delay: 0
-  duration: 1.5
+  duration: 1
   easeType: 23
   easeCurve:
     serializedVersion: 2
@@ -3411,7 +3483,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   loopType: 0
   loops: 1
-  id: OutChuveje
+  id: OutChuvejeMission
   isRelative: 0
   isFrom: 0
   isIndependentUpdate: 0
@@ -3488,7 +3560,7 @@ MonoBehaviour:
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
   delay: 0
-  duration: 2.5
+  duration: 2
   easeType: 24
   easeCurve:
     serializedVersion: 2
@@ -3516,7 +3588,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   loopType: 0
   loops: 1
-  id: InChuveje
+  id: InChuvejeMission
   isRelative: 0
   isFrom: 0
   isIndependentUpdate: 0
@@ -4334,6 +4406,10 @@ PrefabInstance:
     - target: {fileID: 7803844161243209097, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
       propertyPath: m_Name
       value: Chuveje_Prefab_MainGameplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803844161243209097, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
+      propertyPath: m_TagString
+      value: ChuveMessArea
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 175ec86914a0c134b91f9c5183875777, type: 3}
@@ -5840,6 +5916,50 @@ MonoBehaviour:
   MotionVectors: 2
   SkinnedQuality: 1
   skinned: 0
+--- !u!1 &479644278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479644279}
+  - component: {fileID: 479644280}
+  m_Layer: 12
+  m_Name: BoxCharacter
+  m_TagString: PlayerMessArea
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &479644279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479644278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.319, z: 1.01}
+  m_LocalScale: {x: 1.2164, y: 0.75685966, z: 1.9417825}
+  m_Children: []
+  m_Father: {fileID: 1782824342316355542}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &479644280
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479644278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.4169168, z: 0.9999989}
+  m_Center: {x: 0, y: -0.7084614, z: 0}
 --- !u!114 &481367130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22817,6 +22937,7 @@ Transform:
   - {fileID: 1782824343341052501}
   - {fileID: 1782824343131499533}
   - {fileID: 86687464}
+  - {fileID: 479644279}
   m_Father: {fileID: 1782824343114553342}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22922,7 +23043,7 @@ GameObject:
   - component: {fileID: 1782824343114553332}
   m_Layer: 12
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: PlayerMessArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23654,16 +23775,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 263158810}
-        m_TargetAssemblyTypeName: buscadorGameplay, Assembly-CSharp
-        m_MethodName: LoseLoadOptions
+      - m_Target: {fileID: 264238866}
+        m_TargetAssemblyTypeName: DG.Tweening.DOTweenAnimation, Assembly-CSharp-firstpass
+        m_MethodName: DORestartById
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: OutChuvejeMission
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3513057452816806795
@@ -23961,7 +24082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7095590102266526943, guid: 2cffcd8871a1c9c48a0a4742abd8d6d6, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7095590102266526943, guid: 2cffcd8871a1c9c48a0a4742abd8d6d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

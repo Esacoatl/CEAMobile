@@ -12,6 +12,10 @@ TagManager:
   - Piece
   - Canvas
   - PipeRotateSound
+  - ChuveMessArea
+  - AyutlaMessArea
+  - ExtorasMessArea
+  - PlayerMessArea
   layers:
   - Default
   - TransparentFX
